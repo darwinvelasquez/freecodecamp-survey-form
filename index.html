@@ -4,9 +4,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Survey Form</title>
 </head>
 <body>
+    <div>
+      <h1 id="title">Bristol Church of Christ Survey Form</h1>
+      <p id="description">Thank you for taking the time helping us to improve our Church.</p>
+    </div>
+    <div>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+
+        <label for="age" id="number-label">Age (optional)</label><br>
+        <input type="number" id="number" name="age" placeholder="Age" min="10" max="100"><br>
+
+        <label for="ministry">Please choose your ministry</label><br>
+        <select name="ministry" id="dropdown" placeholder="Choose your ministry">
+          <option>Teen</option>
+          <option>Campus</option>
+          <option>Singles</option>
+          <option>Married</option>
+          <option>Golden Age</option>
+        </select><br>
+
+
+      </form>
+    </div>
   
+  <footer></footer>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
