@@ -24,12 +24,18 @@
 
         <label for="ministry">Please choose your ministry</label><br>
         <select name="ministry" id="dropdown" placeholder="Choose your ministry">
-          <option>Teen</option>
-          <option>Campus</option>
-          <option>Singles</option>
-          <option>Married</option>
-          <option>Golden Age</option>
+          <option value="">Select your ministry</option>
+          <option value="teen">Teen</option>
+          <option value="campus">Campus</option>
+          <option value="singles">Singles</option>
+          <option value="married">Married</option>
+          <option value="golden_age">Golden Age</option>
         </select><br>
+
+        <p>Choose your prefer time for Sunday Service</p>
+        <input type="radio" name="time_of_worship"><label for="am">Morning</label><br>
+        <input type="radio" name="time_of_worship"><label for="pm">Afternoon</label><br>
+        <input type="radio" name="time_of_worship"><label for="evening">Evening</label><br>
 
 
       </form>
