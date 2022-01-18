@@ -7,45 +7,71 @@
   <title>Survey Form</title>
 </head>
 <body>
+  <div class="container">
     <div>
       <h1 id="title">Bristol Church of Christ Survey Form</h1>
       <p id="description">Thank you for taking the time helping us to improve our Church.</p>
     </div>
+
     <div>
       <form id="survey-form">
-        <label for="name" id="name-label">Name</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
 
-        <label for="email" id="email-label">Email</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+        </div>
 
-        <label for="age" id="number-label">Age (optional)</label><br>
-        <input type="number" id="number" name="age" placeholder="Age" min="10" max="100"><br>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+        </div>
 
-        <label for="ministry">Please choose your ministry</label><br>
-        <select name="ministry" id="dropdown" placeholder="Choose your ministry">
-          <option value="">Select your ministry</option>
-          <option value="teen">Teen</option>
-          <option value="campus">Campus</option>
-          <option value="singles">Singles</option>
-          <option value="married">Married</option>
-          <option value="golden_age">Golden Age</option>
-        </select><br>
+        <div class="form-group">
+          <label for="age" id="number-label">Age (optional)</label><br>
+          <input type="number" id="number" name="age" placeholder="Age" min="10" max="100"><br>
+        </div>
 
-        <p>Choose your prefer time for Sunday Service</p>
-        <input type="radio" name="time_of_worship"><label for="am">Morning</label><br>
-        <input type="radio" name="time_of_worship"><label for="pm">Afternoon</label><br>
-        <input type="radio" name="time_of_worship"><label for="evening">Evening</label><br>
+        <div class="form-group">
+          <label for="ministry">Please choose your ministry</label><br>
+          <select name="ministry" id="dropdown" placeholder="Choose your ministry">
+            <option value="">Select your ministry</option>
+            <option value="teen">Teen</option>
+            <option value="campus">Campus</option>
+            <option value="singles">Singles</option>
+            <option value="married">Married</option>
+            <option value="golden_age">Golden Age</option>
+          </select><br>
+        </div>
 
-        <p>Please tick what activity would you like the church to have or continue</p>
-        <input type="checkbox" id="bible_discussion" name="church_activity" value="bible_discussion"><label for="bible_discussion">Bible Discussion</label><br>
-        <input type="checkbox" id="midweek_devotional" name="church_activity" value="bible_discussion"><label for="midweek_devotional">Midweek Devotional</label><br>
-        <input type="checkbox" id="prayer_night" name="church_activity" value="bible_discussion"><label for="prayer_night">Prayer Night</label><br>
-        <input type="checkbox" id="other" name="church_activity" value="other"><label for="other">Other</label><br>
+        <div class="form-group">
+          <p>Choose your prefer time for Sunday Service</p>
+          <input type="radio" name="time_of_worship" value="morning"><label for="morning">Morning</label><br>
+          <input type="radio" name="time_of_worship" value="afternoon"><label for="afternoon">Afternoon</label><br>
+          <input type="radio" name="time_of_worship" value="evening"><label for="evening">Evening</label><br>
+        </div>
+
+        <div class="form-group">
+          <p>Please tick what activity would you like the church to have or continue</p>
+          <input type="checkbox" id="church_activity" name="church_activity" value="bible_discussion"><label for="bible_discussion">Bible Discussion</label><br>
+          <input type="checkbox" id="church_activity" name="church_activity" value="midweek_devotional"><label for="midweek_devotional">Midweek Devotional</label><br>
+          <input type="checkbox" id="church_activity" name="church_activity" value="prayer_night"><label for="prayer_night">Prayer Night</label><br>
+          <input type="checkbox" id="church_activity" name="church_activity" value="other"><label for="other">Other</label><br>
+        </div>
+
+        <div class="form-group">
+        <p>Any comments and suggestions?</p>
+        <textarea id="" name="" rows="4" cols="50">Enter your comments here...</textarea><br>
+        </div>
+
+        <div class="form-group">
+        <input type="submit" id="submit" value="Submit">
+        </div>
+
       </form>
     </div>
   
-  <footer></footer>
+    <footer></footer>
+  </div>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
