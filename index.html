@@ -5,15 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <div>
+    <header>
       <h1 id="title">Bristol Church of Christ Survey Form</h1>
       <p id="description">Thank you for taking the time helping us to improve our Church.</p>
-    </div>
+    </header>
 
-    <div>
+    <div class="container">
       <form id="survey-form">
 
         <div class="form-group">
@@ -34,7 +35,7 @@
         <div class="form-group">
           <label for="ministry">Please choose your ministry</label><br>
           <select name="ministry" id="dropdown" placeholder="Choose your ministry">
-            <option value="">Select your ministry</option>
+            <option value="" selected disabledk>Select your ministry</option>
             <option value="teen">Teen</option>
             <option value="campus">Campus</option>
             <option value="singles">Singles</option>
@@ -59,18 +60,17 @@
         </div>
 
         <div class="form-group">
-        <p>Any comments and suggestions?</p>
-        <textarea id="" name="" rows="4" cols="50">Enter your comments here...</textarea><br>
+          <p>Any comments and suggestions?</p>
+          <textarea id="" name="" rows="4" cols="50">Enter your comments here...</textarea><br>
         </div>
 
         <div class="form-group">
-        <input type="submit" id="submit" value="Submit">
+          <input type="submit" id="submit" value="Submit">
         </div>
 
       </form>
     </div>
-  
-    <footer></footer>
+
   </div>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
