@@ -1,13 +1,18 @@
 body {
-  font-family: sans-serif;
-  color: #fff;
+  margin: 0;
+  font-family: 'Balsamiq Sans', cursive;
+  color: #ffffff;
+  width: 80%;
   text-align: left;
   background-image: url("images/praying-together.jpg");
+  opacity: 0.9;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin-left: 10%;
-  margin-right: 10%;
+  background-position: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #survey-form {
@@ -17,6 +22,9 @@ body {
 
 .container {
   width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
 
 header {
